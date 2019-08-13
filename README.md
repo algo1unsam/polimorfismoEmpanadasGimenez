@@ -49,5 +49,5 @@ Tener en cuenta este escenario
 
 * Modelar objetos
 * Polimorfismo entre Baigorria y Galván.
-  * Para pensar: ¿quién se aprovecha de ese polimorfismo? ¿qué mensaje está invlocurando?
+  * Para pensar: ¿quién se aprovecha de ese polimorfismo? ¿qué mensaje está involucrado?
 * Testing
