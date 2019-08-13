@@ -15,6 +15,7 @@ En "Empanadas Giménez", un modesto local de delivery de empanadas, tenemos dos 
 
 El dueño, el señor Giménez, es el encargado de pagarle el sueldo a los empleados, y de gestionar el dinero que se utiliza para esto. Asumimos que Giménez arranca con un fondo para sueldos de $ 300.000. Como los sueldos salen de este fondo, hay que descontar el importe correspondiente cuando Giménez le paga a un empleado.
 
+#### Hacer que Giménez le pueda pagar a un empleado cualquiera
 Por ahora no vamos a tener en cuenta qué hace cada empleado al recibir el dinero, el único efecto que nos interesa del pago es que disminuye el fondo de Giménez.
 
 
@@ -22,17 +23,9 @@ Por ahora no vamos a tener en cuenta qué hace cada empleado al recibir el diner
 
 ## Qué hacen los empleados con lo que cobran
 
-Se modifica el método pagarA(empleado) de Giménez de esta forma
-
-```javascript
-method pagarA(empleado) {
-    dinero -= empleado.sueldo()
-    empleado.cobrarSueldo()
-}
-```
-- probar haciendo que Giménez le pague a Baigorria. Se rompe. ¿Por qué?
-- ¿qué método o métodos hay que agregar, en qué objeto u objetos, para que Giménez le pueda pagar el sueldo a cualquiera de los dos empleados?
-- agregar esos métodos con el siguiente criterio: Baigorria cuando cobra el sueldo lo suma a un acumulador de todo lo que cobró, agregarle la capacidad de entender el mensaje `totalCobrado()`. Galván no hace nada.
+Ahora queremos agregar información de qué hacen los empleados cuando cobran el sueldo. Sabemos que:
+- Baigorria cuando cobra el sueldo lo suma a un acumulador de todo lo que cobró, agregarle la capacidad de entender el mensaje `totalCobrado()`. 
+- Galván no hace nada.
 
 
 <br>
@@ -56,4 +49,5 @@ Tener en cuenta este escenario
 
 * Modelar objetos
 * Polimorfismo entre Baigorria y Galván.
- * Para pensar: ¿qué mensajes entiende cada uno? ¿qué efecto produce al utilizar ambos objetos en el REPL?
+  * Para pensar: ¿quién se aprovecha de ese polimorfismo? ¿qué mensaje está invlocurando?
+* Testing
