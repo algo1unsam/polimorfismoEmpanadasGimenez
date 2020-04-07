@@ -30,14 +30,13 @@ Ahora queremos agregar información de qué hacen los empleados cuando cobran el
 
 Modificar el comportamiento de Galván para que maneje sus gastos, el dinero que tiene, y su deuda. Cuando Galván gasta, se descuenta de su dinero, si no le alcanza aumenta la deuda. Cuando cobra un sueldo, Galván paga sus deudas. Si sobra algo, se suma al dinero que tiene. Agregar a Galván la capacidad de entender los mensajes: `gastar(cuanto)`, `totalDeuda()`, `totalDinero()`.
 
-Tener en cuenta este escenario
+## Testear los siguientes escenarios
 1. Galván arranca con deuda en 0 y dinero en 0. Su sueldo (que aún no cobró) es de 15000.
-1. Galván gasta 4000, `totalDeuda()` debe ser 4000, `totalDinero()` debe ser 0.
-1. Galván gasta otros 8000, `totalDeuda()` pasa a 12000, `totalDinero()` sigue en 0.
-1. Galván cobra, con los 15000 que recibe paga toda su deuda y le sobran 3000 pesos. Por lo tanto, `totalDeuda()` debe ser 0, y `totalDinero()` debe ser 3000.
-1. Galván gasta 25000, cubre 3000 con el dinero que tiene, el resto es deuda. `totalDeuda()` queda en 22000, `totalDinero()` en 0.
-1. Galván cobra, tiene que dedicar los 15000 a pagar deudas, y no le alcanza. Ahora, `totalDeuda()` pasa a 7000, y `totalDinero()` a 0.
-
+2. Si Galván gasta 4000, `totalDeuda()` debe ser 4000, `totalDinero()` debe ser 0.
+3. Si Galván gasta primero 2000 y luego 5000, la deuda se suma. `totalDeuda()` pasa a 7000, `totalDinero()` sigue en 0.
+4. Si Galván hasta 8000 y luego cobra, con los 15000 que recibe paga toda su deuda y le sobran 7000 pesos. Por lo tanto, `totalDeuda()` debe ser 0, y `totalDinero()` debe ser 7000.
+5. Si Galván gasta 20000 y luego cobra, tiene que dedicar los 15000 a pagar deudas, y no le alcanza. Ahora, `totalDeuda()` pasa a 5000, y `totalDinero()` a 0.
+6. Si Galván cobra y luego gasta 25000, cubre 15000 con el dinero que tiene, el resto es deuda. `totalDeuda()` queda en 10000, `totalDinero()` en 0.
 
 <br>
 
