@@ -1,7 +1,3 @@
-
- 
-[![Build Status](https://travis-ci.org/wollok/polimorfismoEmpanadasGimenez.svg?branch=master)](https://travis-ci.org/wollok/polimorfismoEmpanadasGimenez)
-
 # Empanadas Giménez
 
 <img src="img/empanadasGimenez.png" height="200" width="300">
@@ -16,7 +12,7 @@ En "Empanadas Giménez", un modesto local de delivery de empanadas, tenemos dos 
 El dueño, el señor Giménez, es el encargado de pagarle el sueldo a los empleados, y de gestionar el dinero que se utiliza para esto. Asumimos que Giménez arranca con un fondo para sueldos de $ 300.000. Como los sueldos salen de este fondo, hay que descontar el importe correspondiente cuando Giménez le paga a un empleado.
 
 #### Hacer que Giménez le pueda pagar a un empleado cualquiera
-Por ahora no vamos a tener en cuenta qué hace cada empleado al recibir el dinero, el único efecto que nos interesa del pago es que disminuye el fondo de Giménez.
+Por ahora no vamos a tener en cuenta qué hace cada empleado al recibir el dinero, el único efecto que nos interesa del pago es que disminuye el fondo de Giménez según el sueldo del empleado.
 
 
 <br>
